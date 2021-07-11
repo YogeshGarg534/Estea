@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html >
+  <head>
+
+    <title>Sign Up</title>
+    <style type="text/css">
+      h1{
+        text-align:center;
+      }
+      form{
+        padding:2rem;
+      }
+      input {
+       width: 100%;
+       padding: 12px 20px;
+       margin: 8px 0;
+      box-sizing: border-box;
+    }
+    .buttons{
+      text-align:center;
+      padding:2rem;
+    }
+    button{
+      height:30px;
+      width:80px;
+    }
+      </style>
+  </head>
+  <body>
+    <h1>Create New Customer Account</h1>
+    <hr>
+    <form action="/signup" method="post">
+    <label>First Name *<label>
+      <input type="text" name="firstName" required>
+      <label>Last Name *</label>
+        <input type="text" name="lasttName" required>
+        <label>Email *</label>
+        <input type="email" name="email" required>
+        <label>Date of Birth</label>
+        <input type="date" name="DOB">
+        <label>Password *</label>
+        <input type="password" name="password" required>
+        <label>Confirm Password *</label>
+        <input type="password" name="Cpassword" required>
+        <div class ="buttons">
+          <button onclick="/Signup" type="reset">Cancel</button>
+          <button type="submit">Submit</button>
+          </div>
+
+    </form>
+  </body>
+</html>

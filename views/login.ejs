@@ -1,0 +1,44 @@
+
+<<!DOCTYPE html>
+<html>
+  <head>
+    <title>login</title>
+    <style type="text/css">
+
+      h1{
+        text-align:center;
+      }
+      form{
+        padding:2rem;
+      }
+      input {
+       width: 100%;
+       padding: 12px 20px;
+       margin: 8px 0;
+      box-sizing: border-box;
+    }
+    .buttons{
+      text-align:center;
+      padding:2rem;
+    }
+    button{
+
+      width:80px;
+      height:30px;
+
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Customer Login</h1>
+    <form action="/" method="post">
+      <label for="email">Email *</label>
+    <input type="email" name="email" required>
+    <label for="password">Password *</label>
+    <input type="password" name="password" required>
+    <div class="buttons">
+    <button onclick="/login" type="reset">Reset</button>
+    <button type="submit" >Login</button></div>
+    </form>
+  </body>
+</html>
